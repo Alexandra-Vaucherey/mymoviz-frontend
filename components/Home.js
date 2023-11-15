@@ -13,7 +13,7 @@ function Home() {
   //Fetch movies from API using hook effect:
 
   useEffect(() => {
-    fetch('mymoviz-backend-dbar1kq5y-alexvs-projects.vercel.app')
+    fetch('https://mymoviz-backend-six-omega.vercel.app/movies')
     .then(response => response.json())
     .then(data => {
       setMoviesDiscovered(data.movies);
